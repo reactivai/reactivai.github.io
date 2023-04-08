@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Video Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		#video-container {
+			width: 640px;
+			height: 360px;
+			margin: auto;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		#my-video {
+			width: 100%;
+			height: 100%;
+		}
+
+		#logo {
+			margin-top: 20px;
+			width: 100px;
+			height: 100px;
+			background-image: url('logo.png');
+			background-size: cover;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="video-container">
+		<video id="my-video" src="demo.mov" controls></video>
+	</div>
+	<div id="logo"></div>
+</body>
+</html>
+
